@@ -1,13 +1,28 @@
-#logo {
-	height: 400px;
-	margin-left: auto;
-	margin-right: auto;
-	display: block;
-	
-}
 body{
-    background-color: background;
+    background-color: #cce0ff;
+    width: 100%;
 }
-#create {
+#logo {
+    height: 100px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#title{
+    text-align: center;
+    background-color: lightblue;
+}
+
+form {
 	text-align: center;
+        width: 100%;
+        margin-top: 50px;
+}
+#banner {
+    text-align: center;
+    background-color: currentColor;
+    margin-left: 25%;
+    width: 50%;
 }
