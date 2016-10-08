@@ -24,7 +24,7 @@
                     <button type="submit">Create</button>
             </form>
             <p id="ex">
-            <a style="text-align:center" href="./join.html">Example Join Session</a>
+            <a style="text-align:center" href="join.html">Example Join Session</a>
             </p>
     </body>
 </html>
