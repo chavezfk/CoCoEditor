@@ -49,8 +49,10 @@ form {
 
 #stat_view {
     position: absolute;
-    left: 600px;
-    display: none; 
+    left: 500px;
+    display: none;
+    padding: 0px;
+    margin: 0px;
 }
 
 #stats_img {
