@@ -9,8 +9,8 @@ and open the template in the editor.
         <script>
             function show_hide() {
                 var item = document.getElementById("stat_view");
-                if (item.style.display !== 'block') {
-                    item.style.display = 'block';
+                if (item.style.display !== 'inline-block') {
+                    item.style.display = 'inline-block';
                 }
                 else {
                     item.style.display = 'none';
@@ -23,19 +23,23 @@ and open the template in the editor.
         <link rel="stylesheet" type="text/css" href="global.css">
     </head>
     <body>
-        <div id="stat_view">
-            <img src="stats.png" id="stats_img" alt="Stats View Pane">
+        <div id="header">
+        <ul id="navbar">
+            <li>File</li>
+            <li>Edit</li>
+            <li onclick="show_hide()">View</li>
+            <li>Help</li>
+        </ul>
         </div>
-        <div id="editor">
-            <ul id="navbar">
-                <li>File</li>
-                <li>Edit</li>
-                <li onclick="show_hide()">View</li>
-                <li>Help</li>
-            </ul>
-            <form>
-                <textarea rows="10" cols="100">//Sample code&#13;int main(void)&#13;{&#13;&nbsp;&nbsp;&nbsp;&nbsp;printf("hello world\n");&#13;&nbsp;&nbsp;&nbsp;&nbsp;return 0;&#13;}</textarea>
-            </form>
+        <div id="content">
+            <div id="editor">
+                <form>
+                    <textarea id="editorarea">//Sample code&#13;int main(void)&#13;{&#13;&nbsp;&nbsp;&nbsp;&nbsp;printf("hello world\n");&#13;&nbsp;&nbsp;&nbsp;&nbsp;return 0;&#13;}</textarea>
+                </form>
+            </div>
+            <div id="stat_view">
+                <img src="stats.png" id="stats_img" alt="Stats View Pane" />
+            </div>
         </div>
     </body>
 </html>
