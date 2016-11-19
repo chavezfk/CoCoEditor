@@ -1,11 +1,20 @@
 
 //Create page and Join page interface
+
+/**
+ * Creates a new session, with no useres. The session also has no text,
+ * and no history. Returns it's ID
+ * @return the session ID
+ **/
+String createSession();
+
 /** 
  * Forwards the user to a session, with the alias in the request
- * note: the create page also creates a session
+ * @param session ID
  * @param alias the alias to enter the session with
+ * @return the new user ID for the added user in the session
  **/
-void submit(String alias);
+String submit(String sessionID, String alias);
 
 
 
